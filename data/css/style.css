@@ -190,6 +190,10 @@ h1 {
     margin-bottom: 15px;
 }
 
+.widget {
+    margin-bottom: 30px;
+}
+
 #last_note {
     margin-bottom: 15px;
 }
@@ -202,8 +206,19 @@ h1 {
     letter-spacing: -1px;
 }
 
+#last_note h1 a:hover {
+    color: #6DA3BD;
+}
+
 #last_note .date {
    margin-left: 15px;
+}
+
+#instagramm_widget {
+    height: 330px;
+    width: 270px;
+    border: none;
+    padding: 5px;
 }
 
 #login {

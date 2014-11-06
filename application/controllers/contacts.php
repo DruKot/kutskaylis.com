@@ -12,7 +12,7 @@ class Contacts extends CI_Controller {
     {
         parent::__construct();
         $this->load->helper('url');
-        $this->load->helper('twitter');
+        $this->load->helper('instagram');
         $this->load->library('session');
         $this->load->model('Widget_model','',true);
     }

@@ -14,7 +14,7 @@ class Blog extends CI_Controller {
         $this->load->helper('form');
         $this->load->helper('url');
         $this->load->helper('note_cut');
-        $this->load->helper('twitter');
+        $this->load->helper('instagram');
         $this->load->library('session');
         $this->load->library('pagination');
         $this->load->library('form_validation');

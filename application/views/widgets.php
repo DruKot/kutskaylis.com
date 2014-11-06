@@ -23,18 +23,21 @@
 </div>
     
 <div id="widgets">
-    <h1 class="title">Последние записи:</h1>
-    <?php
-    foreach ($notes->result() as $row)
-        {
-            echo '<div id="last_note">';
-            echo "<h1>".anchor('blog/note/'.$row->id,$row->title)."</h1>";
-            echo "<p class='date'>".$row->date."</p>";
-            echo '</div>';
-        }
-    ?>
-    
-    <h1 class="title">Последние твиты:</h1>
-    <?=twitter();?>
+    <div class="widget">
+        <h1 class="title">Последние записи:</h1>
+        <?php
+        foreach ($notes->result() as $row)
+            {
+                echo '<div id="last_note">';
+                echo "<h1>".anchor('blog/note/'.$row->id,$row->title)."</h1>";
+                echo "<p class='date'>".$row->date."</p>";
+                echo '</div>';
+            }
+        ?>
+    </div>
+    <div class="widget">
+        <h1 class="title">Я в Instagram:</h1>
+        <?=instagramm();?>
+    </div>
 </div>
 

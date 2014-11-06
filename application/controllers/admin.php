@@ -14,7 +14,7 @@ class Admin extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper('form');
         $this->load->helper('editor');
-        $this->load->helper('twitter');
+        $this->load->helper('instagram');
         $this->load->library('session');
         $this->load->model('Blog_model','',true);
         $this->load->model('Widget_model','',true);
