@@ -20,11 +20,9 @@ class My_Work extends CI_Controller {
 
     public function index()
     {
-        $data['content'] = '<h1>Фотогаллерея находится в разработке...</h1>';
-        
         $this->load->view('header');
         $this->Widget_model->get_widgets();
-        $this->load->view('content', $data);
+        $this->load->view('my_work');
         $this->load->view('footer');
     }
     
